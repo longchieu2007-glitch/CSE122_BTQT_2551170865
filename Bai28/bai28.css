@@ -1,0 +1,36 @@
+/* Chiều rộng tối đa khung chứa */
+.custom-container {
+    max-width: 800px;
+}
+
+/* 1. Tùy chỉnh Carousel */
+#destinationCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Ảnh slide có chiều cao cố định 340px và giữ tỉ lệ object-fit: cover theo đề bài */
+.carousel-item img {
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Chú thích slide: chữ #FFFFFF trên nền mờ */
+.carousel-caption-custom {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+/* 2. Tùy chỉnh Nav Pills (Tabs) */
+.nav-pills .nav-link.active {
+    background-color: #0d6efd !important;
+}
+
+/* Nền nội dung tab #FFFFFF */
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+}

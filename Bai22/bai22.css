@@ -1,0 +1,137 @@
+:root {
+  --bg: #f4f6f8;
+  --chu: #1e293b;
+  --the: #ffffff;
+  --vien: #e2e8f0;
+  --nhan: #2563eb;
+}
+body.toi {
+  --bg: #0f172a;
+  --chu: #e2e8f0;
+  --the: #1e293b;
+  --vien: #334155;
+  --nhan: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--chu);
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  color: var(--chu);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Thẻ thông tin */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background-color: var(--the);
+  border: 1px solid var(--vien);
+  border-radius: 10px;
+  padding: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card h3 {
+  color: var(--nhan);
+  font-size: 16px;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--chu);
+  transition: color 0.3s ease;
+}
+
+code {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.footer-note {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2563eb;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}

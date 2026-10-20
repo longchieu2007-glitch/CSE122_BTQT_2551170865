@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #12151e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #121820;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.card {
+    background-color: #1c2226;
+    border-radius: 12px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.card img {
+    max-width: 120px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 28px;
+    font-family: Georgia, serif;
+    color: #ffd700;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #232b30;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.btn:hover {
+    background-color: #323d44;
+}
+.btn.active {
+    background-color: #0d6efd;
+    font-weight: bold;
+}
+
+.filter-gray {
+    filter: grayscale(100%);
+}
+.filter-xray {
+    filter: grayscale(100%) invert(100%);
+}
+
+.filter-invert {
+    filter: invert(100%);
+}
+
+.filter-fliph {
+    transform: scaleX(-1);
+}
+.filter-flipv {
+    transform: scaleY(-1);
+}
+
+.filter-glow {
+    filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.filter-shadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.7));
+}
+
+.filter-boldshadow {
+    filter: drop-shadow(8px 8px 0px #000000);
+}
+
+.filter-dropshadow {
+    filter: drop-shadow(6px 6px 8px #000000);
+}
+
+.filter-blur {
+    filter: blur(3px);
+}
+
+.filter-wave {
+    transform: skewX(-15deg);
+}
+
+.filter-mask,
+.filter-alpha {
+    filter: opacity(0.4);
+}

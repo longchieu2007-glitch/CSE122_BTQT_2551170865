@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fdf5eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #fed7aa;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  color: #c2410c;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.card .subtitle {
+  color: #666666;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input.valid {
+  border-color: #16a34a;
+}
+
+.form-group input.invalid {
+  border-color: #dc2626;
+}
+
+/* Thông báo bên dưới ô nhập */
+.message {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.message.valid-msg {
+  color: #16a34a;
+}
+
+.message.invalid-msg {
+  color: #dc2626;
+}
+
+/* Nút đăng ký */
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #c2410c;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #a3360a;
+}

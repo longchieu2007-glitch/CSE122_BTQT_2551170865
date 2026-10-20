@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 16 — Danh sách việc cần làm (JavaScript)</title>
+  <link rel="stylesheet" href="bai16.css">
+</head>
+<body>
+
+  <div class="todo-card">
+    
+    <header class="todo-header">
+      <h1>Danh sách việc cần làm</h1>
+      <p>Thêm việc mới, đánh dấu hoàn thành hoặc xoá — tất cả bằng JavaScript.</p>
+    </header>
+    
+    <div class="todo-input-group">
+      <input type="text" id="todoInput" placeholder="Hoàn thành bài tập Lập trình Web">
+      <button id="addBtn">Thêm</button>
+    </div>
+
+    <!-- Danh sách việc -->
+    <ul id="todoList" class="todo-list">
+      <!-- Các công việc ban đầu giống hình minh hoạ -->
+      <li class="completed">
+        <div class="checkbox"></div>
+        <span class="todo-text">Đọc chương HTML5 cơ bản</span>
+        <button class="delete-btn">Xoá</button>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <span class="todo-text">Làm bài tập CSS Grid</span>
+        <button class="delete-btn">Xoá</button>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <span class="todo-text">Quay video OBS nộp bài</span>
+        <button class="delete-btn">Xoá</button>
+      </li>
+    </ul>
+
+    <!-- Thống kê số việc chưa hoàn thành -->
+    <footer class="todo-footer">
+      <span id="remainingCount">Còn 2 việc chưa hoàn thành</span>
+    </footer>
+
+  </div>
+
+  <script src="bai16.js"></script>
+</body>
+</html>

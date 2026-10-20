@@ -1,0 +1,25 @@
+.content{
+    font-family: Arial;
+    width: 800px;
+    background: linear-gradient(to bottom,#C9A227 , #A8861B);
+    padding: 60px;
+    margin: 100px auto;
+    color: #FFFFFF ;
+}
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+img{
+    float: right;
+    width: 220px;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 100px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(255,255,255, 0.8);
+}
+.para{
+    text-align: justify;
+    line-height: 1.7;
+}

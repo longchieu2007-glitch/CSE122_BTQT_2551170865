@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Thẻ form chính */
+.contact-form {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Tiêu đề form */
+.form-header {
+    background-color: #0f766e;
+    color: #FFFFFF;
+    padding: 24px;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Phần thân form */
+.form-body {
+    padding: 24px;
+}
+
+/* Lưới 2 cột cho các ô nhập ngắn */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-grid .form-group {
+    margin-bottom: 0;
+}
+
+/* Nhãn ô nhập */
+label {
+    color: #334155;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Input, select, textarea */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #0f766e;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox đồng ý */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #334155;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Các nút bấm */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-submit {
+    background-color: #0f766e;
+    color: #FFFFFF;
+}
+
+.btn-reset {
+    background-color: #e2e8f0;
+    color: #334155;
+}

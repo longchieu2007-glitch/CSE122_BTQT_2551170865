@@ -1,0 +1,59 @@
+.all{
+    background:linear-gradient(to bottom, #7ec8e3,
+#0a5c8a);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.container{
+background-color:  #FFFFFF ;
+width: 1050px;
+max-width: 95%;
+padding: 40px;
+border-radius: 15px ;
+overflow: hidden;
+}
+.content {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #0b3d5c;
+}
+.phong{
+    background-color: #0b3d5c;
+    color:  #FFFFFF;
+    font-style: italic;
+    font-size: 18px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.para{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.image{
+    float: right;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.para::first-letter{
+    font-size: 4em;
+    color: #0a5c8a;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}

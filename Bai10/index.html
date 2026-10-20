@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10 - Form liên hệ</title>
+    <!-- Liên kết file CSS bên ngoài -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="contact-form">
+        <!-- Tiêu đề form -->
+        <div class="form-header">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
+        </div>
+
+        <!-- Nội dung các trường nhập -->
+        <div class="form-body">
+            <!-- Hàng 1: Họ và tên & Email (2 cột) -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+            </div>
+
+            <!-- Hàng 2: Số điện thoại & Chủ đề (2 cột) -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Chủ đề</label>
+                    <select id="subject" name="subject">
+                        <option value="khoahoc">Hỏi về khoá học</option>
+                        <option value="hocphi">Hỏi về học phí</option>
+                        <option value="khac">Thắc mắc khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Nội dung (Textarea) -->
+            <div class="form-group">
+                <label for="message">Nội dung</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <!-- Checkbox đồng ý -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Tôi đồng ý nhận email phản hồi.</label>
+            </div>
+
+            <!-- Các nút bấm -->
+            <div class="button-group">
+                <!-- type="button" giúp nút này chỉ để trưng, bấm vào không có hiệu ứng gửi/báo lỗi -->
+                <button type="button" class="btn btn-submit">Gửi liên hệ</button>
+                
+                <!-- type="reset" vẫn hoạt động bình thường để xóa hết thông tin đã nhập -->
+                <button type="reset" class="btn btn-reset">Nhập lại</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

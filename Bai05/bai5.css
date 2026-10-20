@@ -1,0 +1,66 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 30px;
+}
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h1{
+    color: #C2185B;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;}
+.box{
+    display: flex;
+    gap:30px;
+    align-items:flex-start
+}
+.ima{
+    180px;
+    flex-shrink: 0;
+}
+.ima img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.content{
+    flex: 1;
+}
+h2{
+    background-color:  #FFC0CB;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+}
+.gioithieu{
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.gioithieu li{
+    margin-bottom: 5px;
+}
+.lienhe{
+    list-style-type: circle;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.lienhe li{
+    margin-bottom: 5px;
+}
+.link{
+    width: 100%;
+    text-align: right;
+    margin-top: 35px;
+}
+
+.link a{
+    color: #0000EE;
+    text-decoration: underline;
+}

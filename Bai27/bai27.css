@@ -1,0 +1,8 @@
+.custom-card-img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.modal-content {
+    background-color: #ffffff;
+}

@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Thẻ hồ sơ (Card chính) */
+.profile-card {
+  display: grid;
+  grid-template-columns: 280px 1fr; 
+  width: 100%;
+  max-width: 850px;
+  background-color: #ffffff; 
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+}
+
+/* Cột trái */
+.left-column {
+  background: linear-gradient(180deg, #1565C0, #0d3f7a); 
+  color: #ffffff; 
+  padding: 30px 20px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ảnh đại diện vẽ bằng CSS */
+.avatar {
+  width: 110px;
+  height: 110px;
+  background-color: #ffffff; 
+  color: #1565C0; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+/* Thông tin liên hệ cột trái */
+.contact-info {
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+  line-height: 2.2;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-all;
+}
+
+.contact-item i {
+  font-size: 13px;
+}
+
+/* Cột phải */
+.right-column {
+  padding: 30px 35px;
+  color: #333333;
+}
+
+/* Tiêu đề mục */
+.section-title {
+  color: #1565C0; 
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e0e0e0; 
+  margin-bottom: 12px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skill-chip {
+  background-color: #e3f0ff; 
+  color: #0d3f7a; 
+  padding: 6px 16px;
+  border-radius: 20px; 
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* Liên kết */
+.links {
+  font-size: 13.5px;
+}
+
+.links a {
+  color: #1565C0; 
+}
+
+.links a:hover {
+  color: #0d3f7a;
+}

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background-color:#FFFDE7;
+    min-height: 100vh;
+    border: 3px solid #9E9E9E
+}
+h1{
+    color: #D40000 ;
+    background-color: #FFD9E6;
+    text-align: center;
+}
+.xanh{
+    color: #0033CC ;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+}
+.do{
+    color: #D40000 ;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+}
+hr{
+    background-color: #0033CC;
+    width: 55%;
+    height: 2px;
+    border: none ;
+    margin: auto;
+}
+
